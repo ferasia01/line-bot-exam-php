@@ -35,7 +35,7 @@
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Location"
-    else if($message == "ขอที่อยู๋" || $message == "พิกัดบริษัท"){
+    else if($message == "ขอที่อยู่" || $message == "พิกัดบริษัท"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "location";
         $arrayPostData['messages'][0]['title'] = "Total Service Development Co., Ltd.";
